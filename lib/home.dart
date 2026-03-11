@@ -19,12 +19,15 @@ class Home extends StatelessWidget {
                Image.network('https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png',
                height: 200,
                width: 200),
-                Text('Welcome to Flutter Login App',
+                Text(
+                  'Welcome to Flutter Login App',
                   style: TextStyle(
                     fontSize: 24,
                   ),
                 ),
-                SizedBox(height: 16),
+                SizedBox(
+                    height: 16
+                ),
                TextFormField(
                   decoration: InputDecoration(
                     labelText: 'Email',
@@ -41,7 +44,9 @@ class Home extends StatelessWidget {
                     return null;
                   },
                ),
-                SizedBox(height: 16),
+                SizedBox(
+                    height: 16
+                ),
                 TextFormField(
                   decoration: InputDecoration(
                     labelText: 'Password',
@@ -61,14 +66,19 @@ class Home extends StatelessWidget {
                     },
                   obscureText: true,
                 ),
-                SizedBox(height: 16),
+                SizedBox(
+                    height: 16
+                ),
                 SizedBox(
                   width: 200,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.blue,
                       foregroundColor: Colors.white,
-                      padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
+                      padding: EdgeInsets.symmetric(
+                          horizontal: 50,
+                          vertical: 15
+                      ),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15),
                       ),
@@ -83,7 +93,9 @@ class Home extends StatelessWidget {
                     child: Text('Login'),
                   ),
                 ),
-                SizedBox(height: 16),
+                SizedBox(
+                    height: 16
+                ),
                Row(
                  mainAxisAlignment: MainAxisAlignment.center,
                  children: [
@@ -92,7 +104,6 @@ class Home extends StatelessWidget {
                      fontSize: 16,
                      fontWeight: FontWeight.w500
                    ),
-
                      ),
                    TextButton(
                      style: TextButton.styleFrom(
@@ -103,11 +114,11 @@ class Home extends StatelessWidget {
                        style: TextStyle(
                            fontSize: 16,
                            fontWeight: FontWeight.w500
-                       ),),
+                       ),
+                     ),
                    ),
                  ],
                )
-
              ],
             ),
           ),
